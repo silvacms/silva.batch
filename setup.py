@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.1dev'
+version = '1.1'
 
 setup(name='silva.batch',
       version=version,
@@ -19,12 +19,14 @@ setup(name='silva.batch',
       author_email='info@infrae.com',
       url='',
       license='BSD',
-      packages=find_packages(exclude=['ez_setup']),
+      packages=find_packages('src', exclude=['ez_setup']),
       namespace_packages=['silva'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'zeam.utils.batch'
-      ],
+          'zeam.utils.batch',
+          'silva.core.views',
+          'grokcore.component',
+          ],
       )

@@ -5,7 +5,7 @@ version = '1.2dev'
 
 setup(name='silva.batch',
       version=version,
-      description="Batch template for silva",
+      description="Batch integration for Silva CMS",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
@@ -17,7 +17,7 @@ setup(name='silva.batch',
       keywords='batch silva pagination',
       author='Antonin Amand',
       author_email='info@infrae.com',
-      url='http://infrae.com/products/silva',
+      url='https://github.com/silvacms/silva.batch',
       license='BSD',
       package_dir={'': 'src'},
       packages=find_packages('src', exclude=['ez_setup']),
